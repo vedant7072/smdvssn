@@ -17,7 +17,15 @@
     <h2 class="text-3xl font-bold text-center bhagwa-text mb-10" data-hi="हमारे सदस्य" data-en="Our Members">हमारे सदस्य</h2>
 
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
+<!-- Search Box -->
+<div class="max-w-lg mx-auto mb-10">
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="नाम से खोजें | Search by name"
+    class="w-full p-3 border rounded-lg"
+    onkeyup="searchMember()">
+</div>
       <!-- Member Card Template -->
       <div class="card text-center p-6">
         <img src="assets/img/nirmal.jpg" alt="Member Photo" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
@@ -71,7 +79,21 @@
     <p data-hi="© 2025 श्री मलूक दास विश्व सेवा संस्थान न्यास" data-en="© 2025 Shree Malook Das Vishva Seva Sansthan Nyas">© 2025 श्री मलूक दास विश्व सेवा संस्थान न्यास</p>
     <p class="text-sm" data-hi="सर्वाधिकार सुरक्षित" data-en="All rights reserved">सर्वाधिकार सुरक्षित</p>
   </footer>
+<script>
+  function searchMember() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
 
+    cards.forEach(card => {
+      let name = card.querySelector("h3").textContent.toLowerCase();
+      if (name.includes(input)) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+</script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
