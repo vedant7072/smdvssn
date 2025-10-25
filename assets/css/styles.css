@@ -1,0 +1,89 @@
+/* =============================================================
+   Shree Malook Das Vishva Seva Sansthan Nyas
+   Custom Stylesheet (using Tailwind CDN for layout)
+   ============================================================= */
+
+/* Font setup (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans Devanagari', 'Lato', sans-serif;
+  background-color: #FFF8F1; /* Light saffron background */
+  color: #2D2D2D;
+}
+
+/* -------------------------------------------------------------
+   Theme Colors
+------------------------------------------------------------- */
+:root {
+  --bhagwa: #FF8C00; /* Bhagwa Orange */
+  --bhagwa-dark: #C25C00;
+  --cream: #FFF8F1;
+  --maroon: #7A1F0C;
+}
+
+.bhagwa-bg { background-color: var(--bhagwa); }
+.bhagwa-text { color: var(--bhagwa); }
+
+/* -------------------------------------------------------------
+   Header and Navbar Styling
+------------------------------------------------------------- */
+header {
+  background-color: var(--bhagwa);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* -------------------------------------------------------------
+   Buttons
+------------------------------------------------------------- */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* -------------------------------------------------------------
+   Section & Card Enhancements
+------------------------------------------------------------- */
+section {
+  scroll-margin-top: 80px; /* Smooth scroll offset for anchor links */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* -------------------------------------------------------------
+   Footer Styling
+------------------------------------------------------------- */
+footer {
+  background-color: var(--bhagwa);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* -------------------------------------------------------------
+   Responsive Utilities
+------------------------------------------------------------- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1rem;
+  }
+}

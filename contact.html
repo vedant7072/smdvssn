@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>संपर्क करें | Contact - श्री मलूक दास विश्व सेवा संस्थान न्यास</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-orange-50 text-gray-800">
+
+  <!-- Header Include -->
+  <div id="header-placeholder"></div>
+
+  <!-- Contact Section -->
+  <section class="py-12 px-6 md:px-16 bg-white">
+    <h2 class="text-3xl font-bold text-center bhagwa-text mb-8" data-hi="संपर्क करें" data-en="Contact Us">संपर्क करें</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4" data-hi="पता" data-en="Address">पता</h3>
+        <p class="mb-6" data-hi="गोवर्धन परिक्रमा मार्ग, मथुरा (उ.प्र.)\nसंत शिरोमणी श्री गया प्रसाद गुरुकुलम, ग्राम हँसुआ पारा, प्रयागपुर, बहराइच, उत्तर प्रदेश" data-en="Govardhan Parikrama Marg, Mathura (U.P.)\nSant Shiromani Shri Gaya Prasad Gurukulam, Gram Hansua Para, Prayagpur, Bahraich, Uttar Pradesh">गोवर्धन परिक्रमा मार्ग, मथुरा (उ.प्र.)<br>संत शिरोमणी श्री गया प्रसाद गुरुकुलम, ग्राम हँसुआ पारा, प्रयागपुर, बहराइच, उत्तर प्रदेश</p>
+
+        <h3 class="text-xl font-semibold mb-2" data-hi="संपर्क नंबर" data-en="Contact Number">संपर्क नंबर</h3>
+        <p class="mb-6">📞 <a href="tel:9415564543" class="text-bhagwa-text font-semibold">9415564543</a></p>
+
+        <h3 class="text-xl font-semibold mb-2" data-hi="ईमेल" data-en="Email">ईमेल</h3>
+        <p>📧 <a href="mailto:vedant7072@gmail.com" class="text-bhagwa-text font-semibold">vedant7072@gmail.com</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4" data-hi="संपर्क फ़ॉर्म" data-en="Contact Form">संपर्क फ़ॉर्म</h3>
+        <form action="mailto:vedant7072@gmail.com" method="post" enctype="text/plain" class="space-y-4 bg-orange-50 p-6 rounded-xl shadow-md">
+          <div>
+            <label for="name" class="block font-medium mb-1" data-hi="नाम" data-en="Name">नाम</label>
+            <input type="text" id="name" name="name" required class="w-full p-2 border rounded">
+          </div>
+          <div>
+            <label for="email" class="block font-medium mb-1" data-hi="ईमेल" data-en="Email">ईमेल</label>
+            <input type="email" id="email" name="email" required class="w-full p-2 border rounded">
+          </div>
+          <div>
+            <label for="message" class="block font-medium mb-1" data-hi="संदेश" data-en="Message">संदेश</label>
+            <textarea id="message" name="message" rows="4" required class="w-full p-2 border rounded"></textarea>
+          </div>
+          <button type="submit" class="bhagwa-bg text-white px-4 py-2 rounded hover:bg-orange-600" data-hi="भेजें" data-en="Send">भेजें</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-12 px-6 md:px-16 bg-orange-100">
+    <h3 class="text-2xl font-bold text-center bhagwa-text mb-6" data-hi="स्थान मानचित्र" data-en="Location Map">स्थान मानचित्र</h3>
+    <div class="flex justify-center">
+      <iframe src="https://maps.app.goo.gl/CXkuyrmtaJGJsbC49" width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bhagwa-bg text-white text-center p-6 mt-10">
+    <p data-hi="© 2025 श्री मलूक दास विश्व सेवा संस्थान न्यास" data-en="© 2025 Shree Malook Das Vishva Seva Sansthan Nyas">© 2025 श्री मलूक दास विश्व सेवा संस्थान न्यास</p>
+    <p class="text-sm" data-hi="सर्वाधिकार सुरक्षित" data-en="All rights reserved">सर्वाधिकार सुरक्षित</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
